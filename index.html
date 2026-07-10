@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nahuel Soria | Fintech Software Developer & Fractional CTO, Buenos Aires</title>
+<meta name="description" content="Software developer and fractional CTO building fintech products end to end: payments, KYC/KYB, virtual accounts, dashboards and automations. Over $20M USD processed by platforms I built.">
+<link rel="canonical" href="https://nahuelsoria.github.io/">
+<meta name="author" content="Nahuel Soria">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nahuelsoria.github.io/">
+<meta property="og:title" content="Nahuel Soria | Fintech Software Developer & Fractional CTO">
+<meta property="og:description" content="I build fintech products end to end: payments, KYC/KYB, virtual accounts, dashboards and automations. Over $20M USD processed by platforms I built.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/157411216?v=4">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@nahhwe">
+<meta name="twitter:creator" content="@nahhwe">
+<meta name="twitter:title" content="Nahuel Soria | Fintech Software Developer & Fractional CTO">
+<meta name="twitter:description" content="I build fintech products end to end: payments, KYC/KYB, virtual accounts, dashboards and automations.">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/157411216?v=4">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230e100f'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2346d68c' font-family='monospace'>NS</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nahuel Soria",
+  "url": "https://nahuelsoria.github.io/",
+  "image": "https://avatars.githubusercontent.com/u/157411216?v=4",
+  "jobTitle": "Software Developer & Fractional CTO",
+  "description": "Software developer building custom SaaS, fintech products and automations end to end.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+  "email": "mailto:jorgenahuelsoria@gmail.com",
+  "sameAs": [
+    "https://github.com/nahuelsoria",
+    "https://www.linkedin.com/in/nahuelsoria/",
+    "https://twitter.com/nahhwe",
+    "https://nahuelsoria.vercel.app"
+  ],
+  "knowsAbout": ["Fintech", "Payments infrastructure", "KYC/KYB", "TypeScript", "Next.js", "Node.js", "PostgreSQL", "LLM agents", "Automation"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0e100f;
+  --ink-2:#141715;
+  --paper:#e9e6dd;
+  --muted:#8f948c;
+  --line:rgba(233,230,221,.14);
+  --line-strong:rgba(233,230,221,.3);
+  --green:#46d68c;
+  --amber:#d9a441;
+  --serif:"Fraunces",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --sans:"IBM Plex Sans",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono)}
+
+/* header */
+header{border-bottom:1px solid var(--line)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-family:var(--mono);font-size:13px;letter-spacing:.04em}
+.topbar .id{color:var(--paper)}
+.topbar .id b{color:var(--green);font-weight:500}
+.topbar nav{display:flex;gap:22px}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--green);text-decoration:none}
+
+/* hero */
+.hero{padding:96px 0 64px;position:relative}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);margin-bottom:28px}
+.kicker::before{content:"● ";color:var(--green)}
+h1{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(2.4rem,6.4vw,4.4rem);
+  line-height:1.06;letter-spacing:-.015em;max-width:15ch;
+}
+h1 em{font-style:italic;color:var(--green)}
+.hero p.lede{margin-top:28px;max-width:56ch;color:var(--muted);font-size:1.06rem}
+.hero p.lede strong{color:var(--paper);font-weight:500}
+
+/* stat ledger */
+.stats{
+  margin:64px 0 0;border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{padding:22px 18px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none;padding-left:0}
+.stat .v{font-family:var(--serif);font-size:1.9rem;font-weight:500;color:var(--paper)}
+.stat .v span{color:var(--green)}
+.stat .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
+/* sections */
+section{padding:80px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--line-strong);padding-bottom:14px;margin-bottom:8px}
+.sec-head .num{font-family:var(--mono);font-size:12px;color:var(--amber)}
+.sec-head h2{font-family:var(--serif);font-weight:500;font-size:1.7rem;letter-spacing:-.01em}
+
+/* what I do */
+.do-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.do{padding:26px 26px 26px 0;border-bottom:1px solid var(--line)}
+.do:nth-child(even){padding-left:26px;border-left:1px solid var(--line)}
+.do h3{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:8px}
+.do p{color:var(--muted);font-size:.98rem}
+.claim{margin:34px 0 0;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--paper);max-width:44ch}
+
+/* project ledger */
+.proj{display:grid;grid-template-columns:56px 1fr;gap:0 20px;padding:30px 0;border-bottom:1px solid var(--line);position:relative;transition:background .25s}
+.proj:hover{background:var(--ink-2)}
+.proj::before{content:"";position:absolute;left:-24px;top:0;bottom:0;width:3px;background:var(--green);transform:scaleY(0);transition:transform .25s;transform-origin:top}
+.proj:hover::before{transform:scaleY(1)}
+.proj .idx{font-family:var(--mono);font-size:12px;color:var(--amber);padding-top:6px}
+.proj h3{font-family:var(--serif);font-weight:500;font-size:1.45rem;letter-spacing:-.01em}
+.proj h3 a{color:var(--paper)}
+.proj h3 a:hover{color:var(--green);text-decoration:none}
+.proj .role{font-family:var(--mono);font-size:12px;color:var(--green);letter-spacing:.06em;margin:4px 0 10px}
+.proj p{color:var(--muted);max-width:66ch;font-size:.98rem}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);padding:3px 9px;border-radius:2px}
+
+/* open source */
+.oss-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}
+.oss{border:1px solid var(--line);padding:24px;transition:border-color .25s;background:var(--ink-2)}
+.oss:hover{border-color:var(--green)}
+.oss h3{font-family:var(--mono);font-size:15px;font-weight:500;margin-bottom:10px}
+.oss h3 a{color:var(--paper)}
+.oss h3 a:hover{color:var(--green);text-decoration:none}
+.oss h3 span{color:var(--amber)}
+.oss p{color:var(--muted);font-size:.94rem}
+.oss-note{margin-top:22px;color:var(--muted);font-size:.95rem;max-width:66ch}
+
+/* stack + contact */
+.stack-line{font-family:var(--mono);font-size:.9rem;line-height:2.1;color:var(--muted);margin-top:22px;max-width:72ch}
+.stack-line b{color:var(--paper);font-weight:500}
+.contact{padding:90px 0 40px;text-align:left}
+.contact h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4.5vw,2.9rem);letter-spacing:-.015em;max-width:20ch}
+.contact h2 em{font-style:italic;color:var(--green)}
+.contact p{color:var(--muted);margin-top:16px;max-width:56ch}
+.cta-row{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:.06em;padding:13px 22px;
+  border:1px solid var(--green);color:var(--green);transition:all .2s;border-radius:2px
+}
+.btn:hover{background:var(--green);color:var(--ink);text-decoration:none}
+.btn.ghost{border-color:var(--line-strong);color:var(--paper)}
+.btn.ghost:hover{border-color:var(--paper);background:var(--paper);color:var(--ink)}
+
+footer{border-top:1px solid var(--line);margin-top:60px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:22px 0;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.foot a{color:var(--muted)}
+.foot a:hover{color:var(--green)}
+
+/* reveal */
+.r{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.r.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+
+@media (max-width:720px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:18px 14px}
+  .stat:nth-child(odd){border-left:none;padding-left:0}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+  .do-grid,.oss-grid{grid-template-columns:1fr}
+  .do:nth-child(even){padding-left:0;border-left:none}
+  .do{padding-right:0}
+  .proj{grid-template-columns:1fr}
+  .proj .idx{padding-top:0;margin-bottom:6px}
+  .topbar nav{gap:14px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <span class="id"><b>NS</b> / nahuelsoria</span>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#oss">Open source</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/nahuelsoria" rel="me">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero" aria-label="Introduction">
+      <p class="kicker">Fintech infrastructure, end to end</p>
+      <h1>I build the software that <em>moves the money.</em></h1>
+      <p class="lede">
+        <strong>Nahuel Soria.</strong> Software developer and fractional CTO in Buenos Aires.
+        I take products from architecture to production: payments, KYC/KYB onboarding,
+        virtual accounts, dashboards and the automations behind them. Working remotely
+        with founders and teams worldwide.
+      </p>
+
+      <div class="stats" role="list" aria-label="Track record">
+        <div class="stat" role="listitem"><div class="v"><span>$20M+</span></div><div class="k">USD processed by platforms I built</div></div>
+        <div class="stat" role="listitem"><div class="v">2</div><div class="k">Fintech platforms as technical owner</div></div>
+        <div class="stat" role="listitem"><div class="v">3</div><div class="k">Own products in production</div></div>
+        <div class="stat" role="listitem"><div class="v">2</div><div class="k">Open source tools published</div></div>
+      </div>
+    </section>
+
+    <section id="what" class="r" aria-label="What I do">
+      <div class="sec-head"><span class="num">01</span><h2>What I do</h2></div>
+      <div class="do-grid">
+        <div class="do"><h3>Web apps &amp; SaaS</h3><p>Products with auth, data, payments and admin dashboards. Built to a spec, owned end to end.</p></div>
+        <div class="do"><h3>Fintech &amp; payments</h3><p>KYC/KYB onboarding, provider integrations, settlement rules and multi-currency operations.</p></div>
+        <div class="do"><h3>Automation &amp; internal systems</h3><p>Turning manual processes into reliable tooling, including LLM agents where they earn their keep.</p></div>
+        <div class="do"><h3>Landing pages &amp; sites</h3><p>Fast, measurable and built to convert. Performance treated as a feature.</p></div>
+      </div>
+      <p class="claim">My sweet spot is the ambiguous problem that has to run in production and can't be wrong.</p>
+    </section>
+
+    <section id="work" aria-label="Selected work">
+      <div class="sec-head"><span class="num">02</span><h2>Selected work</h2></div>
+
+      <article class="proj r">
+        <span class="idx">001</span>
+        <div>
+          <h3><a href="https://github.com/nahuelsoria/bridgewater-payments">Bridgewater Payments</a></h3>
+          <p class="role">SOLE TECHNICAL OWNER / B2B FINTECH INFRASTRUCTURE</p>
+          <p>End-to-end payments platform for business clients. I designed and built the architecture, backend, frontend, integrations and the operational backoffice.</p>
+          <div class="tags"><span class="tag">KYC/KYB</span><span class="tag">virtual accounts</span><span class="tag">fiat off-ramps</span><span class="tag">settlement rules</span><span class="tag">ops console</span></div>
+        </div>
+      </article>
+
+      <article class="proj r">
+        <span class="idx">002</span>
+        <div>
+          <h3><a href="https://github.com/nahuelsoria/condor-otc">Condor OTC / Condor Capitals</a></h3>
+          <p class="role">CTO / CROSS-BORDER PAYMENTS &amp; EXCHANGE</p>
+          <p>Payments and exchange platform for international operations. I built the financial provider integrations and the internal tooling the desk runs on every day.</p>
+          <div class="tags"><span class="tag">payments</span><span class="tag">OTC / exchange</span><span class="tag">provider integrations</span><span class="tag">multi-currency</span></div>
+        </div>
+      </article>
+
+      <article class="proj r">
+        <span class="idx">003</span>
+        <div>
+          <h3><a href="https://github.com/nahuelsoria/llm-audit">LLM Audit</a></h3>
+          <p class="role">AI CODE AUDITING</p>
+          <p>Automated auditing of codebases using orchestrated LLM agents. It turns a manual expert review into a repeatable, prioritized report.</p>
+          <div class="tags"><span class="tag">agent orchestration</span><span class="tag">automated analysis</span><span class="tag">reporting</span></div>
+        </div>
+      </article>
+
+      <article class="proj r">
+        <span class="idx">004</span>
+        <div>
+          <h3>Picaday</h3>
+          <p class="role">OWN PRODUCT / PHOTO JOURNALING</p>
+          <p>A daily photographic journal focused on a calm, fast experience. Shipped to production with a strong bar on performance (LCP under 2.5s) and UX.</p>
+          <div class="tags"><span class="tag">performance-first</span><span class="tag">Web Workers</span><span class="tag">E2E testing</span></div>
+        </div>
+      </article>
+
+      <article class="proj r">
+        <span class="idx">005</span>
+        <div>
+          <h3>Numerai</h3>
+          <p class="role">OWN PRODUCT / PERSONAL FINANCE</p>
+          <p>Multi-currency finance tracker with AI expense capture over WhatsApp and payment integrations.</p>
+          <div class="tags"><span class="tag">AI categorization</span><span class="tag">multi-currency</span><span class="tag">payments</span></div>
+        </div>
+      </article>
+
+      <article class="proj r">
+        <span class="idx">006</span>
+        <div>
+          <h3>What I Wish</h3>
+          <p class="role">OWN PRODUCT / SOCIAL WISHLIST</p>
+          <p>App for creating and sharing gift lists, with WhatsApp-driven virality and onboarding in under a minute.</p>
+          <div class="tags"><span class="tag">shareable lists</span><span class="tag">multi-user</span><span class="tag">mobile-first</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="oss" class="r" aria-label="Open source">
+      <div class="sec-head"><span class="num">03</span><h2>Open source</h2></div>
+      <div class="oss-grid">
+        <div class="oss">
+          <h3><a href="https://github.com/nahuelsoria/agent-fleet">nahuelsoria/<span>agent-fleet</span></a></h3>
+          <p>A tiny, dependency-free framework for running scheduled agents (shell or LLM CLIs) on a single box. One shared core for config, logging and alerting.</p>
+        </div>
+        <div class="oss">
+          <h3><a href="https://github.com/nahuelsoria/prod-playwright-audit">nahuelsoria/<span>prod-playwright-audit</span></a></h3>
+          <p>A cross-agent skill (Claude Code, Codex, Cursor) that safely audits critical flows of a deployed web app with Playwright, without ever mutating production data.</p>
+        </div>
+      </div>
+      <p class="oss-note">I also contribute to projects I use, like <a href="https://github.com/eyaltoledano/claude-task-master">Task Master</a>. Everything public lives on <a href="https://github.com/nahuelsoria">my GitHub</a>.</p>
+    </section>
+
+    <section id="stack" class="r" aria-label="Stack">
+      <div class="sec-head"><span class="num">04</span><h2>Stack I reach for</h2></div>
+      <p class="stack-line">
+        <b>TypeScript</b> / <b>React &amp; Next.js</b> / <b>Node.js</b> / <b>Python</b> /
+        <b>PostgreSQL &amp; Firebase</b> / payment &amp; banking integrations /
+        LLM agents &amp; automation / <b>Vercel &amp; Cloudflare</b>
+      </p>
+      <p class="stack-line">I pick tools that will still make sense in five years.</p>
+    </section>
+
+    <section id="contact" class="contact r" aria-label="Contact">
+      <h2>Have a product to build? <em>Let's talk.</em></h2>
+      <p>A SaaS, a dashboard, a payment integration, an automation. I take projects end to end, from idea to production.</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:jorgenahuelsoria@gmail.com">jorgenahuelsoria@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/nahuelsoria/">LinkedIn</a>
+        <a class="btn ghost" href="https://nahuelsoria.vercel.app">Full portfolio</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="y">2026</span> Nahuel Soria / Buenos Aires, Argentina</span>
+    <span>
+      <a href="https://github.com/nahuelsoria" rel="me">GitHub</a> /
+      <a href="https://twitter.com/nahhwe" rel="me">X</a> /
+      <a href="https://www.linkedin.com/in/nahuelsoria/" rel="me">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+const io = new IntersectionObserver((entries) => {
+  for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}, { threshold: 0.12 });
+document.querySelectorAll('.r').forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>

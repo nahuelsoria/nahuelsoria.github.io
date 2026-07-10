@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nahuelsoria.github.io/sitemap.xml
